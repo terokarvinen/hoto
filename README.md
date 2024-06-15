@@ -2,14 +2,6 @@
 
 Extract HTML tags and metadata, optionally rename files. Supports MAFF as used by WebScrapbook. 
 
-## Install
-
-	$ sudo apt-get update
-	$ sudo apt-get install wget python3-pyquery python3-rdflib
-	$ chmod ugo+x hoto.py
-	$ ./hoto.py
-	Usage: 'hoto foo.html'. Try --help.
-
 ## Quickstart
 
 	$ wget terokarvinen.com
@@ -37,6 +29,14 @@ Extract HTML tags and metadata, optionally rename files. Supports MAFF as used b
 	$ ./hoto.py index.html --rename
 	$ ls
 	hoto.py  'Tero Karvinen.html'
+
+## Install
+
+	$ sudo apt-get update
+	$ sudo apt-get install wget python3-pyquery python3-rdflib
+	$ chmod ugo+x hoto.py
+	$ ./hoto.py
+	Usage: 'hoto foo.html'. Try --help.
 
 ## hoto --help
 
