@@ -34,6 +34,7 @@ Extract HTML tags and metadata, optionally rename files. Supports MAFF as used b
 
 	$ sudo apt-get update
 	$ sudo apt-get install wget python3-pyquery python3-rdflib
+	$ wget https://raw.githubusercontent.com/terokarvinen/hoto/main/hoto.py
 	$ chmod ugo+x hoto.py
 	$ ./hoto.py
 	Usage: 'hoto foo.html'. Try --help.
