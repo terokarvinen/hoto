@@ -1,5 +1,7 @@
 # hoto - HTML and MAFF tag extraction
 
+Would you like to have nice names for your stored web pages?
+
 Extract HTML tags and metadata, optionally rename files. Supports MAFF as used by WebScrapbook. 
 
 Features
@@ -14,7 +16,7 @@ Features
 - Extract MAFF files
 	- Supports [MAFF (Mozilla Archive Format)](https://www.amadzone.org/mozilla-archive-format/maff-specification.html) archives created by WebScrapbook Firefox addon
 	- Supports index.rdf metadata
-		- archive date - automatically converted to calendar.txt format
+		- archive date - automatically converted to [calendar.txt format](https://terokarvinen.com/2024/format-date-calendar-txt/) (2024-06-15 w24 Sat)
 		- original host
 	- Transparently extracts HTML and RDF from compressed MAFF
 - Run almost any Python code when renaming (using f-string format)
