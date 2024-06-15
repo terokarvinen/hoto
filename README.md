@@ -5,6 +5,7 @@ Extract HTML tags and metadata, optionally rename files. Supports MAFF as used b
 ## Quickstart
 
 	$ wget terokarvinen.com
+	...'index.html' saved
 	
 	$ ./hoto.py index.html
 	Tero Karvinen.html
