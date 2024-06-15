@@ -127,6 +127,7 @@ def parseArgs():
 	#parser.add_argument("-n", "--count", type=int, default=0, help="Number of records to process. Use zero (0) for unlimited.")
 	parser.add_argument("--suggest", "-s", default=False, action=argparse.BooleanOptionalAction, help='''Suggest tags and metadata for files, showing both selectors "{sel.h1}" and matches "Tero's homepage".''')
 	parser.add_argument("--rename", default=False, action=argparse.BooleanOptionalAction, help='''Rename files to output format.''')
+	parser.add_argument("--maff-html-file-name", "-m", default="index.html", help='''HTML file to analyze inside MAFF archive. If one HTML file embeds another, the main is often included with an alternate name, such as "index_1.html".''')
 	parser.add_argument("--no-action", "-n", default=False, action=argparse.BooleanOptionalAction, help='''Does not actually modify any files, but shows what would happen.''')
 	args = parser.parse_args()
 
@@ -215,7 +216,7 @@ class RDF(dict):
 	__setattr__ = dict.__setitem__
 	__delattr__ = dict.__delitem__
 
-def readPath(path):
+def readPath(path, args):
 	"Read pathlib.Path path to string, optionally extracting files from inside MAFF zip"
 	info(f'Reading "{path}"...')
 	# verify arguments
@@ -239,8 +240,8 @@ def readPath(path):
 				with zf.open(zippedFile, "r") as f:
 					b = f.read()
 					rdfStr = b.decode("utf-8")
-			if zippedFile.endswith("/index.html"):
-				debug(f'''matched index.html: "{zippedFile}"''')
+			if zippedFile.endswith("/"+args.maff_html_file_name):
+				debug(f'''matched {args.maff_html_file_name}: "{zippedFile}"''')
 				with zf.open(zippedFile, "r") as f:
 					b = f.read()
 					htmlStr = b.decode("utf-8")
@@ -263,7 +264,7 @@ def filenameClean(s, keepext=None):
 
 def processFile(path, args):
 	info(f'## Processing file "{path}"')
-	htmlStr, rdfStr = readPath(path)	
+	htmlStr, rdfStr = readPath(path, args)	
 
 	info(f'### Extracting Tags and Metadata from "{path}"')
 	sel = Selector(htmlStr)
