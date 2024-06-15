@@ -1,6 +1,6 @@
 # hoto - HTML and MAFF tag extraction
 
-Would you like to have nice names for your stored web pages?
+Would you like to have nice names for your stored web pages? [Install](#install), [Quickstart](#quickstart)
 
 Extract HTML tags and metadata, optionally rename files. Supports MAFF as used by WebScrapbook. 
 
