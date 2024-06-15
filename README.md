@@ -21,6 +21,7 @@ Features
 	- Transparently extracts HTML and RDF from compressed MAFF
 - Run almost any Python code when renaming (using f-string format)
 - Replace HTML tag content with regular expressions
+- Automatically process large number of files
 
 ## Quickstart
 
