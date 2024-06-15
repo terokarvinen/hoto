@@ -2,11 +2,28 @@
 
 Extract HTML tags and metadata, optionally rename files. Supports MAFF as used by WebScrapbook. 
 
+Features
+
+- Extract HTML tags
+	- h1
+	- title
+	- .authorname
+- Rename HTML and MAFF files using HTML tags and metadata
+- Use CSS selectors, just like jQuery
+- Extract MAFF files
+	- Supports MAFF (Mozilla Archive Format) archives created by WebScrapbook Firefox addon
+	- Supports index.rdf metadata
+		- archive date - automatically converted to calendar.txt format
+		- original host
+	- Transparently extracts HTML and RDF from compressed MAFF
+- Run almost any Python code when renaming (using f-string format)
+- Replace HTML tag content with regular expressions
+
 ## Quickstart
 
 	$ wget terokarvinen.com
 	...'index.html' saved
-	
+
 	$ ./hoto.py index.html
 	Tero Karvinen.html
 
