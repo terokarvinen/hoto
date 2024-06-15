@@ -117,25 +117,25 @@ of MAFF index.rdf parsing is only tested and developed with WebScrapbook.
 
 See you at https://TeroKarvinen.com
 
-positional arguments:
-  files                 HTML and MAFF files (default: None)
+	positional arguments:
+	  files                 HTML and MAFF files (default: None)
 
-options:
-  -h, --help            show this help message and exit
-  --format FORMAT, -f FORMAT
-                        Output format, Python f-string syntax. Can run almost
-                        any Python code. See --help for using selectors
-                        (sel.h1) and specials. (default: {h1}.{ext})
-  -v, --verbose         Set logging level to verbose (INFO) (default: 30)
-  -d, --debug
-  --suggest, --no-suggest, -s
-                        Suggest tags and metadata for files, showing both
-                        selectors "{sel.h1}" and matches "Tero's homepage".
-                        (default: False)
-  --rename, --no-rename
-                        Rename files to output format. (default: False)
-  --no-action, --no-no-action, -n
-                        Does not actually modify any files, but shows what
-                        would happen. (default: False)
+	options:
+	  -h, --help            show this help message and exit
+	  --format FORMAT, -f FORMAT
+	                        Output format, Python f-string syntax. Can run almost
+	                        any Python code. See --help for using selectors
+	                        (sel.h1) and specials. (default: {h1}.{ext})
+	  -v, --verbose         Set logging level to verbose (INFO) (default: 30)
+	  -d, --debug
+	  --suggest, --no-suggest, -s
+	                        Suggest tags and metadata for files, showing both
+	                        selectors "{sel.h1}" and matches "Tero's homepage".
+	                        (default: False)
+	  --rename, --no-rename
+	                        Rename files to output format. (default: False)
+	  --no-action, --no-no-action, -n
+	                        Does not actually modify any files, but shows what
+	                        would happen. (default: False)
 
 Copyright 2024 Tero Karvinen https://TeroKarvinen.com
