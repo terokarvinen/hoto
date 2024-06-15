@@ -54,6 +54,8 @@ Features
 
 ## Install
 
+It's a single Python script, so you can just run it. 
+
 	$ sudo apt-get update
 	$ sudo apt-get install wget python3-pyquery python3-rdflib
 	$ wget https://raw.githubusercontent.com/terokarvinen/hoto/main/hoto.py
