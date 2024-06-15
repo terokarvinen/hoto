@@ -12,7 +12,7 @@ Features
 - Use CSS selectors, just like jQuery
 	- Uses [PyQuery library](https://pyquery.readthedocs.io/en/stable/index.html), and supports PyQuery extra features
 - Extract MAFF files
-	- Supports MAFF (Mozilla Archive Format) archives created by WebScrapbook Firefox addon
+	- Supports [MAFF (Mozilla Archive Format)](https://www.amadzone.org/mozilla-archive-format/maff-specification.html) archives created by WebScrapbook Firefox addon
 	- Supports index.rdf metadata
 		- archive date - automatically converted to calendar.txt format
 		- original host
